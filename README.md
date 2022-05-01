@@ -18,6 +18,7 @@ The first function takes in a distance matrix and returns the shortest paths for
         return graph
 ```
 ## Input and Output
+**Note:** The `no_path` variable has been explicitly declared as `999` in the following example.
 ```python
     # Sample input
     test = [[0, 5, no_path, 10],
@@ -28,3 +29,9 @@ The first function takes in a distance matrix and returns the shortest paths for
     # Solution
     solve_paths(test) # [[0, 5, 8, 9], [999, 0, 3, 4], [999, 999, 0, 1], [999, 999, 999, 0]]     
 ```
+## How to Implement
+Copy the `floyd.py` module into the code directory and import `solve_paths` and `no_path`.
+## Testing
+The `tests.py` file contains three test cases for unit testing. More test cases may be added by including additional methods inside the `Test` class.
+## License
+Please see https://github.com/adibhaider/floyd-warshall-recursive/blob/main/LICENSE.
